@@ -1,21 +1,24 @@
 package principal;
 
-import Http.Client;
-import Http.Request;
-import Http.Response;
-
-import java.io.IOException;
+import modelos.Moneda;
+import modelos.MonedaOmdb;
+import calculos.Menu;
+import modelos.ExchangeRateService;
 
 public class Main {
     public static void main(String[] args) {
         try {
-            Client client = new Client();
-            Request request = new Request("https://v6.exchangerate-api.com/v6/884678351f1005c55a0b09e9/latest/USD");
-            Response response = new Response(client, request);
+            String apiUrl = "https://v6.exchangerate-api.com/v6/884678351f1005c55a0b09e9/latest/USD";
+            ExchangeRateService service = new ExchangeRateService(apiUrl);
 
-            System.out.println("Status Code: " + response.getStatusCode());
-            System.out.println("Response Body: " + response.getResponseBody());
-        } catch (InterruptedException | IOException e) {
+            MonedaOmdb monedaOmdb = service.obtenerTasasDeCambio();
+            Moneda moneda = new Moneda(monedaOmdb);
+
+            System.out.println(moneda);
+
+            Menu menu = new Menu(monedaOmdb);
+            menu.mostrarMenuCompleto();
+        } catch (Exception e) {
             System.err.println("Error: " + e.getMessage());
         }
     }
