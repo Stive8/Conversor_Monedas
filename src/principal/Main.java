@@ -19,7 +19,7 @@ public class Main {
             Menu menu = new Menu(monedaOmdb);
             menu.mostrarMenuCompleto();
         } catch (Exception e) {
-            System.err.println("Error: " + e.getMessage());
+            System.out.println("Error: " + e.getMessage());
         }
     }
 }

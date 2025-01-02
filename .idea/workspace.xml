@@ -4,14 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="00e34bd0-99c0-4c63-869d-64093db01c67" name="Changes" comment="Creacion de Client, Request y Response">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/calculos/CalculadoraConversion.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/calculos/Menu.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modelos/ExchangeRateResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modelos/Moneda.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modelos/MonedaOmdb.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="00e34bd0-99c0-4c63-869d-64093db01c67" name="Changes" comment="Version Final">
       <change beforePath="$PROJECT_DIR$/src/principal/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/principal/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -82,12 +75,21 @@
       <option name="project" value="LOCAL" />
       <updated>1735831365395</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Version Final">
+      <option name="closed" value="true" />
+      <created>1735845528649</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1735845528649</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Creacion" />
     <MESSAGE value="Creacion de Client, Request y Response" />
-    <option name="LAST_COMMIT_MESSAGE" value="Creacion de Client, Request y Response" />
+    <MESSAGE value="Version Final" />
+    <option name="LAST_COMMIT_MESSAGE" value="Version Final" />
   </component>
 </project>
